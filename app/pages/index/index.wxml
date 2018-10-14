@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view wx:if="{{isShow}}" class="container" style="background-image:url('{{img[0]}}')">
+<view>
+<view class="me-title"> 
+    <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <view class='me-body'>
+        <view class='body-title'>{{userInfo.Xh+" 第 "+userInfo.SkZhou+" 周"}}</view>
+        <view class='body-xh'> 您好，{{userInfo.Xm}}同学</view>
+    </view>
+  </view>
+  <!-- <view bindtap='back' class='me-item'>
+    更换背景
+  </view> -->
+  <view bindtap='person' class='me-item'>
+    个人信息
+  </view>
+  <view bindtap='about' class='me-item'>
+    关于
+  </view>
+  <view bindtap='sign' class='me-item'>
+    退出
+  </view>
+</view>
+</view>

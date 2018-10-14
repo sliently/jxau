@@ -1,0 +1,75 @@
+<view class='container'>
+  <dialog id='dialog' title="选择周">
+    <view>
+      <view wx:for="{{da}}" wx:key="{{index}}" data-value="{{index+1}}" catchtap='changeWeek' class='wx_item'>第{{index+1}}周</view>
+    </view>
+  </dialog>
+    <dialog id='jieke' title="{{one.KcMc}}">
+    <view>
+      <view class='wx_msg'>上课地址：{{one.Skdd}}</view>
+      <view class='wx_msg'>上课时间：{{one.SjdText}}</view>
+      <view class='wx_msg'>任课老师：{{one.Rkls}}</view>
+      <view class='wx_msg'>上课对象：{{one.Skdx}}</view>
+      <view class='wx_msg'>开课单位：{{one.KkDw}}</view>
+    </view>
+  </dialog>
+  <view class='nav-top'>
+    <view class='tabletitle'>
+      <view bindtap='showWeek' class='first'>
+        <view style="font-size:20rpx;">{{week}}周</view>
+        <view>{{days.month}}</view>
+      </view>
+      <view wx:for="{{days.arr}}"
+       wx:key="{{index}}" 
+       class="item {{item.days===current?'active':''}}">
+        <view>{{item.title}}</view>
+        <view>{{item.days}}</view>
+      </view>
+    </view>
+  </view>
+  <scroll-view class='tables' scroll-top="80rpx" scroll-y>
+    <view class='table'>
+      <view class='first'>
+        <view class='table-td'>
+          <view class='nav'>1</view>
+          <view class='nav'>2</view>
+        </view>
+        <view  class='table-td'>
+          <view class='nav'>3</view>
+          <view class='nav'>4</view>
+        </view>
+        <view  class='table-td'>
+          <view class='nav'>5</view>
+          <view class='nav'>6</view>
+        </view>
+        <view  class='table-td'>
+          <view class='nav'>7</view>
+          <view class='nav'>8</view>
+        </view>
+        <view  class='table-td'>
+          <view class='nav'>9</view>
+          <view class='nav'>10</view>
+        </view>
+        <view  class='table-td'>
+          <view class='nav'>11</view>
+          <view class='nav'>12</view>
+        </view>
+        <!-- <view  class='table-td'>
+          <text>12</text>
+        </view> -->
+      </view>
+       <view wx:for="{{Data}}" wx:key="{{index}}" class='table-tr'>
+         <view wx:if="{{item.isWeeks}}" wx:for="{{item}}" 
+         style="height:{{item.top.len*110}}rpx;top:{{item.top.top*112}}rpx;background:{{item.colors}}" 
+         class='table-td'
+         data-value="{{item}}" 
+         catchtap='classMsg'
+         wx:key="{{index}}">
+          <view>
+              <text>{{item.KcMc+" "+item.Skdd}}</text>
+          </view>
+        </view> 
+      </view> 
+    </view>
+  </scroll-view>  
+</view>

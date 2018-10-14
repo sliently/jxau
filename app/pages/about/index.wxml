@@ -1,0 +1,16 @@
+<!--pages/about/index.wxml-->
+<view class='container'>
+  <view class='about-title'>说明</view>
+  <view class='about-body'>
+    能力有限，不喜勿喷，个人开发，不做商业用途，有建议可通过下方链接联系我， 如有侵权，联系作者
+    <view style="text-align:center;margin-top:60rpx;">
+      <image style='width:540rpx;height:740rpx;' src='./msg.jpg'></image>
+    </view>
+  </view>
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">联系我</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2018-2018 haiping313.cn</view>
+  </view>
+</view>

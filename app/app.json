@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Timetable/index",
+    "pages/achievement/index",
+    "pages/login/index",
+    "pages/exam/index",
+    "pages/person/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "教务助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Timetable/index",
+        "iconPath":"img/timeTable.png",
+        "selectedIconPath": "img/timeTable.png",
+        "text": "课表"
+      },
+      {
+        "pagePath": "pages/exam/index",
+        "iconPath": "img/exam.png",
+        "selectedIconPath": "img/exam.png",
+        "text": "考试"
+      },
+      {
+        "pagePath": "pages/achievement/index",
+        "iconPath": "img/test.png",
+        "selectedIconPath": "img/test.png",
+        "text": "成绩"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/me.png",
+        "selectedIconPath":"img/me.png",
+        "text": "我"
+      }
+    ]
+  }
+}

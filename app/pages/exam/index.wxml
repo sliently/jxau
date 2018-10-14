@@ -1,0 +1,15 @@
+<!--pages/exam/index.wxml-->
+<view class='container'>
+  <view wx:if="{{msg===[]}}">暂无数据</view>
+  <dialog id='exam' title="{{one.Ksbname}}">
+    <view>
+      <view class='wx_msg'>考试时间：{{one.KsSj?one.KsSj:"未定"}}</view>
+      <view class='wx_msg'>考试地点：{{one.Ksdd?one.Ksdd:"未定"}}</view>
+      <view class='wx_msg'>监考老师：{{one.Jkls?one.Jkls:"未定"}}</view>
+      <view class='wx_msg'>考试类型：{{one.Kslb?one.Kslb:"未定"}}</view>
+      <view class='wx_msg'>考试对象：{{one.Ksdx?one.Ksdx:"未定"}}</view>
+      <view class='wx_msg'>课程类别：{{one.Kclb?one.Kclb:"未定"}}</view>
+    </view>
+  </dialog>
+  <view class='item-msg' wx:for="{{msg}}" wx:key="{{index}}" data-value="{{item}}" bindtap='showMsg'>{{item.Ksbname}}</view>
+</view>

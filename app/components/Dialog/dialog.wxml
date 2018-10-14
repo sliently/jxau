@@ -1,0 +1,10 @@
+<!--components/Dialog/dialog.wxml-->
+<view hidden="{{!isShow}}">
+  <view catchtap='hideDialog' class='wx_dialog_container'></view>
+  <view class='wx_menu'>
+    <view class='wx_dialog_title'>{{title}}</view>
+     <scroll-view class='wx_dialog_body' scroll-y>
+        <slot></slot>
+    </scroll-view> 
+  </view>
+</view>

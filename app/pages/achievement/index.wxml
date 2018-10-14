@@ -1,0 +1,22 @@
+<view class="container">
+  <dialog id='Chenji' title="{{one.Kcmc}}">
+    <view>
+      <view class='wx_msg'>总分：{{one.Zpcj}}</view>
+      <view class='wx_msg'>平时成绩：{{one.Pscj}}</view>
+      <view class='wx_msg'>考试成绩：{{one.Kscj}}</view>
+      <view class='wx_msg'>补考成绩：{{one.Bkcj}}</view>
+      <view class='wx_msg'>学时：{{one.Xs}}</view>
+      <view class='wx_msg'>课程类别：{{one.Kclb}}</view>
+      <view class='wx_msg'>重修成绩：{{one.Cxcj}}</view>
+    </view>
+  </dialog>
+  <view class='item' wx:for="{{Ch}}" wx:key="{{index}}">
+    <view class='item-title'>{{item.title}}</view>
+    <view wx:for="{{item.body}}" wx:key="{{index}}" class='item-body'>
+      <view class='item-msg' bindtap='getOne' data-value="{{item}}" >
+        <view class='item-Kcmc'>{{item.Kcmc}}</view>
+        <view>{{item.Zpcj}}</view>
+      </view>
+    </view>
+  </view>
+</view>

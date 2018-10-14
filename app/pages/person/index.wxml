@@ -1,0 +1,10 @@
+<!--pages/person/index.wxml-->
+<view class='container'>
+  <view class='person-title'>个人信息</view>
+  <view class='person-item'>姓名：{{infoMsg.Xm}}</view>
+  <view class='person-item'>学号：{{infoMsg.Xh}}</view>
+  <view class='person-item'>专业：{{infoMsg.Zymc}}</view>
+  <view class='person-item'>班级：{{infoMsg.Bjmc}}</view>
+  <view class='person-item'>学院：{{infoMsg.Yxmc}}</view>
+  <view class='person-item'>学期：{{infoMsg.DqXqqc}}</view>
+</view>

@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='form'>
+    <view class='form-title'>账号绑定</view>
+    <view class='form-logo'>
+       <image class='logo' src="./logo.png"></image>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label">账号</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input bindinput='bindUserInput' class="weui-input" placeholder="请输入账号"/>
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">密码</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input"  bindinput='bindPswInput' type='password' placeholder="请输入密码" />
+          </view>
+      </view>
+    </view>
+    <view class='form-footer'>
+        <button class="weui-btn" type="primary" bindtap='login'>绑定</button>
+        <!-- <button class="weui-btn" type="info">重置</button> -->
+    </view>
+  </view>
+</view>

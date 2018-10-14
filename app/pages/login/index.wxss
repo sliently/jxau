@@ -1,0 +1,23 @@
+/* pages/login/index.wxss */
+.form{
+  width: 100%;
+}
+.form-logo{
+  text-align: center;
+  margin: 30rpx 0;
+}
+.logo{
+  max-width: 120rpx;
+  max-height: 100rpx;
+}
+.form-title{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 10rpx;
+  margin: 30rpx 0;
+}
+.form-footer{
+  margin: 30rpx 0;
+  padding: 20rpx;
+}
